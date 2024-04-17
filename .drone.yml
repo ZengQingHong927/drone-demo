@@ -8,14 +8,8 @@ platform:
 
 steps:
 - name: build
-  image: golang:1.21.1
+  image: golang:1.22.2
   commands:
     - echo "Start to Drone CI/CD."
     - go build
     - go test
-
-trigger:     
-  branch: 
-  - main
-  event:
-  - push
